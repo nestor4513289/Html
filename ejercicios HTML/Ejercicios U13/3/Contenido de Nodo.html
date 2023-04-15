@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cambiar Contenido de Nodo</title>
+</head>
+<body>
+    <h1 id="miNodo">Hola, soy un nodo</h1>
+    <button onclick="cambiarContenido()">Cambiar Contenido</button>
+
+    <script>
+        function cambiarContenido() {
+            // Seleccionar el nodo específico por su ID
+            var nodo = document.getElementById("miNodo");
+            
+            // Cambiar el contenido del nodo
+            nodo.innerHTML = "¡Hola, he cambiado!";
+        }
+    </script>
+</body>
+</html>

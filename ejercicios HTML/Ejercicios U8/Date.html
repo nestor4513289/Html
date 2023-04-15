@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mostrar Fecha Actual</title>
+</head>
+<body>
+  <h1>Fecha Actual:</h1>
+  <p id="fechaActual"></p>
+
+  <script>
+    // Obtener la fecha actual
+    var fecha = new Date();
+
+    // Obtener los componentes de la fecha
+    var dia = fecha.getDate();
+    var mes = fecha.getMonth() + 1; // Los meses comienzan desde 0
+    var anio = fecha.getFullYear();
+
+    // Crear la cadena de fecha en el formato deseado (ejemplo: DD/MM/YYYY)
+    var fechaActual = dia + '/' + mes + '/' + anio;
+
+    // Mostrar la fecha en el navegador
+    document.getElementById("fechaActual").innerText = fechaActual;
+  </script>
+</body>
+</html>

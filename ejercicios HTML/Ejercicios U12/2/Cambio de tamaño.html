@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Animación de Cambio de Tamaño</title>
+  <style>
+    /* Estilos del objeto */
+    #myObject {
+      width: 100px;
+      height: 100px;
+      background-color: blue;
+      transition: transform 0.5s ease; /* Transición de animación */
+    }
+  </style>
+</head>
+<body>
+  <!-- Objeto a animar -->
+  <div id="myObject"></div>
+
+  <!-- Script de JavaScript -->
+  <script>
+    // Obtener el objeto
+    var object = document.getElementById('myObject');
+
+    // Agregar evento de clic
+    object.addEventListener('click', function() {
+      // Cambiar tamaño del objeto
+      var scale = Math.random() * 2; // Valor aleatorio entre 0 y 2
+      object.style.transform = 'scale(' + scale + ')'; // Aplicar cambio de tamaño
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contador de Frutas</title>
+    <script>
+        // Arreglo de frutas
+        var frutas = ["manzana", "pera", "banana", "naranja", "kiwi"];
+        
+        // Función para mostrar la cantidad de elementos en el arreglo
+        function mostrarCantidadFrutas() {
+            // Obtener el elemento de HTML donde se mostrará la cantidad
+            var contadorElemento = document.getElementById("contador");
+            
+            // Obtener la cantidad de elementos en el arreglo
+            var cantidad = frutas.length;
+            
+            // Mostrar la cantidad en el navegador
+            contadorElemento.innerHTML = "La cantidad de frutas es: " + cantidad;
+        }
+    </script>
+</head>
+<body>
+    <h1>Contador de Frutas</h1>
+    <p id="contador"></p>
+    <button onclick="mostrarCantidadFrutas()">Mostrar cantidad de frutas</button>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Números Pares</title>
+</head>
+<body>
+  <h1>Números Pares</h1>
+
+  <script>
+    // Crear arreglo "números"
+    var números = [5, 10, 15, 20, 25];
+
+    // Crear arreglo "pares" con los números pares del arreglo "números"
+    var pares = [];
+    for (var i = 0; i < números.length; i++) {
+      if (números[i] % 2 === 0) {
+        pares.push(números[i]);
+      }
+    }
+
+    // Mostrar el arreglo "pares" en el navegador
+    document.write("<p>Arreglo de Números Pares: " + pares + "</p>");
+  </script>
+</body>
+</html>

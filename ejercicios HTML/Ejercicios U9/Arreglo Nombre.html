@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ordenar Nombres</title>
+    <script>
+        // Declaración del arreglo con los nombres
+        var nombres = ["Ana", "Juan", "María", "Pedro", "Luis"];
+
+        // Función para ordenar alfabéticamente el arreglo de nombres
+        function ordenarNombres() {
+            nombres.sort();
+            mostrarNombres();
+        }
+
+        // Función para mostrar los nombres en el navegador
+        function mostrarNombres() {
+            var nombresOrdenados = nombres.join(", ");
+            document.getElementById("resultado").innerHTML = "Nombres ordenados: " + nombresOrdenados;
+        }
+    </script>
+</head>
+<body>
+    <h1>Ordenar Nombres</h1>
+    <button onclick="ordenarNombres()">Ordenar Nombres</button>
+    <p id="resultado"></p>
+</body>
+</html>

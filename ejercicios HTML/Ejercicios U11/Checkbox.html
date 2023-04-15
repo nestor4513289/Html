@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Validación de Checkboxes</title>
+  <script>
+    function validarCheckbox() {
+      // Obtener todos los checkboxes
+      var checkboxes = document.getElementsByName('opciones');
+
+      // Variable para llevar el conteo de checkboxes seleccionados
+      var contador = 0;
+
+      // Iterar sobre los checkboxes para contar los seleccionados
+      for (var i = 0; i < checkboxes.length; i++) {
+        if (checkboxes[i].checked) {
+          contador++;
+        }
+      }
+
+      // Validar que al menos uno esté seleccionado
+      if (contador === 0) {
+        alert('Debes seleccionar al menos una opción.');
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+</head>
+<body>
+  <h1>Validación de Checkboxes</h1>
+  <form onsubmit="return validarCheckbox();" action="#">
+    <input type="checkbox" name="opciones" value="opcion1"> Opción 1<br>
+    <input type="checkbox" name="opciones" value="opcion2"> Opción 2<br>
+    <input type="checkbox" name="opciones" value="opcion3"> Opción 3<br>
+    <input type="submit" value="Enviar">
+  </form>
+</body>
+</html>
