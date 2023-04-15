@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>backpacks S.A. de C.V.</title>
+</head>
+<body>
+	<h1>Formulario de Cotizaciones</h1>
+	<form method="POST" action="enviar_cotizacion.php">
+		<label for="nombre">Nombre:</label>
+		<input type="text" id="nombre" name="nombre" required><br>
+
+		<label for="email">Correo electrónico:</label>
+		<input type="email" id="email" name="email" required><br>
+
+		<label for="producto">Detalles del producto y/o servicio:</label><br>
+		<textarea id="producto" name="producto" rows="4" cols="50" required></textarea><br>
+
+		<label for="telefono">Teléfono:</label>
+		<input type="tel" id="telefono" name="telefono" required><br>
+
+		<input type="submit" value="Enviar cotización">
+	</form>
+</body>
+</html>
